@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.infrastructure.mapper.BatchLogMapper">
+
+    <!-- ResultMap定義 -->
+    <resultMap id="BatchLogResultMap" type="com.example.demo.domain.entity.BatchLogEntity">
+        <id property="id" column="id"/>
+        <result property="batchName" column="batch_name"/>
+        <result property="message" column="message"/>
+        <result property="status" column="status"/>
+        <result property="createdAt" column="created_at"/>
+        <!-- 新規追加フィールド -->
+        <result property="messageId" column="message_id"/>
+        <result property="receiptHandle" column="receipt_handle"/>
+        <result property="errorDetails" column="error_details"/>
+        <result property="retryCount" column="retry_count"/>
+        <result property="startedAt" column="started_at"/>
+        <result property="completedAt" column="completed_at"/>
+    </resultMap>
+
+    <!-- INSERT -->
+    <insert id="insert" parameterType="com.example.demo.domain.entity.BatchLogEntity">
+        INSERT INTO batch_log (
+            batch_name,
+            message,
+            status,
+            created_at,
+            message_id,
+            receipt_handle,
+            error_details,
+            retry_count,
+            started_at,
+            completed_at
+        ) VALUES (
+            #{batchName},
+            #{message},
+            #{status},
+            #{createdAt},
+            #{messageId},
+            #{receiptHandle},
+            #{errorDetails},
+            #{retryCount},
+            #{startedAt},
+            #{completedAt}
+        )
+    </insert>
+
+    <!-- SELECT ALL -->
+    <select id="findAll" resultMap="BatchLogResultMap">
+        SELECT * FROM batch_log
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- SELECT BY BATCH_NAME -->
+    <select id="findByBatchName" parameterType="string" resultMap="BatchLogResultMap">
+        SELECT * FROM batch_log
+        WHERE batch_name = #{batchName}
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- SELECT PROCESSING BY MESSAGE_ID -->
+    <select id="findProcessingByMessageId" parameterType="string" resultMap="BatchLogResultMap">
+        SELECT * FROM batch_log
+        WHERE message_id = #{messageId}
+        AND status = 'PROCESSING'
+        ORDER BY created_at DESC
+        LIMIT 1
+    </select>
+
+    <!-- SELECT BY MESSAGE_ID -->
+    <select id="findByMessageId" parameterType="string" resultMap="BatchLogResultMap">
+        SELECT * FROM batch_log
+        WHERE message_id = #{messageId}
+        ORDER BY created_at DESC
+    </select>
+
+</mapper>

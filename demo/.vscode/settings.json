@@ -1,0 +1,25 @@
+{
+    // ビルド設定を自動で更新するように変更（推奨）
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    // Java 21 のパスを明示的に指定（インストールパスは自身の環境に合わせてください）
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "/Users/taguchikakuto/java/jdk-21.0.10.jdk/Contents/Home",// Windowsなら "C:\\Program Files\\Java\\jdk-21" 等
+            "default": true
+        }
+    ],
+
+    // テスト実行時の設定（ワークスペースの認識を助けます）
+    "java.test.config": [
+        {
+            "name": "default",
+            "workingDirectory": "${workspaceFolder}"
+        }
+    ],
+
+    // 言語サーバーのメモリ割り当て（Spring Bootプロジェクトでは多めが安定します）
+    "java.jdt.ls.vmargs": "-XX:+UseG1GC -XX:+UseStringDeduplication -Xmx2G",
+    "java.compile.nullAnalysis.mode": "automatic"
+}

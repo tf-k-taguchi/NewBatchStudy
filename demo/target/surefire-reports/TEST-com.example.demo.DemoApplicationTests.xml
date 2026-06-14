@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.demo.DemoApplicationTests" time="85.721" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/test-classes:/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/classes:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-batch/3.4.2/spring-boot-starter-batch-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/taguchikakuto/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/taguchikakuto/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/taguchikakuto/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/taguchikakuto/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/taguchikakuto/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/taguchikakuto/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/taguchikakuto/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.2/spring-boot-starter-jdbc-3.4.2.jar:/Users/taguchikakuto/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-core/5.2.1/spring-batch-core-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-infrastructure/5.2.1/spring-batch-infrastructure-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/retry/spring-retry/2.0.11/spring-retry-2.0.11.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-core/1.14.3/micrometer-core-1.14.3.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/taguchikakuto/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/taguchikakuto/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/taguchikakuto/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-starter/3.0.3/mybatis-spring-boot-starter-3.0.3.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/3.0.3/mybatis-spring-boot-autoconfigure-3.0.3.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/mybatis/3.5.14/mybatis-3.5.14.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/mybatis-spring/3.0.3/mybatis-spring-3.0.3.jar:/Users/taguchikakuto/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/taguchikakuto/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/taguchikakuto/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/taguchikakuto/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/taguchikakuto/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/taguchikakuto/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/taguchikakuto/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/taguchikakuto/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/taguchikakuto/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/taguchikakuto/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/taguchikakuto/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/taguchikakuto/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/taguchikakuto/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/taguchikakuto/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/taguchikakuto/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/taguchikakuto/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/taguchikakuto/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/taguchikakuto/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/taguchikakuto/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/taguchikakuto/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-test/5.2.1/spring-batch-test-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-jdbc/6.2.2/spring-jdbc-6.2.2.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Tokyo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="demo"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/surefire/surefirebooter-20260404124347395_3.jar /Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/surefire 2026-04-04T12-43-47_340-jvmRun1 surefire-20260404124347395_1tmp surefire_0-20260404124347395_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/test-classes:/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/classes:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-batch/3.4.2/spring-boot-starter-batch-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/taguchikakuto/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/taguchikakuto/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/taguchikakuto/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/taguchikakuto/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/taguchikakuto/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/taguchikakuto/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/taguchikakuto/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.2/spring-boot-starter-jdbc-3.4.2.jar:/Users/taguchikakuto/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-core/5.2.1/spring-batch-core-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-infrastructure/5.2.1/spring-batch-infrastructure-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/retry/spring-retry/2.0.11/spring-retry-2.0.11.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-core/1.14.3/micrometer-core-1.14.3.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/taguchikakuto/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/taguchikakuto/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/taguchikakuto/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/taguchikakuto/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-starter/3.0.3/mybatis-spring-boot-starter-3.0.3.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/3.0.3/mybatis-spring-boot-autoconfigure-3.0.3.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/mybatis/3.5.14/mybatis-3.5.14.jar:/Users/taguchikakuto/.m2/repository/org/mybatis/mybatis-spring/3.0.3/mybatis-spring-3.0.3.jar:/Users/taguchikakuto/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/taguchikakuto/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/taguchikakuto/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/taguchikakuto/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/taguchikakuto/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/taguchikakuto/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/taguchikakuto/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/taguchikakuto/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/taguchikakuto/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/taguchikakuto/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/taguchikakuto/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/taguchikakuto/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/taguchikakuto/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/taguchikakuto/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/taguchikakuto/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/taguchikakuto/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/taguchikakuto/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/taguchikakuto/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/taguchikakuto/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/taguchikakuto/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/taguchikakuto/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/taguchikakuto/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/taguchikakuto/.m2/repository/org/springframework/batch/spring-batch-test/5.2.1/spring-batch-test-5.2.1.jar:/Users/taguchikakuto/.m2/repository/org/springframework/spring-jdbc/6.2.2/spring-jdbc-6.2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/taguchikakuto"/>
+    <property name="user.language" value="ja"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo"/>
+    <property name="java.vm.compressedOopsMode" value="Non-zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo/target/surefire/surefirebooter-20260404124347395_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.3+9-LTS"/>
+    <property name="user.name" value="taguchikakuto"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.3+9"/>
+    <property name="localRepository" value="/Users/taguchikakuto/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/0r/5hb9lnn93f9fmldd5drn1kn00000gn/T/"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="/Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="59568"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/taguchikakuto/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.3+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %msg%n"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[demo] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.demo.DemoApplicationTests" time="0.003">
+    <system-out><![CDATA[2026-04-04 12:43:53 - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-04 12:43:53 - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2026-04-04 12:43:53 - Starting DemoApplicationTests using Java 21.0.3 with PID 59568 (started by taguchikakuto in /Users/taguchikakuto/Desktop/プログラミング学習用/下期目標バッチ処理/demo)
+2026-04-04 12:43:53 - The following 1 profile is active: "local"
+2026-04-04 12:43:53 - HikariPool-1 - Starting...
+2026-04-04 12:43:53 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:batch_db user=SA
+2026-04-04 12:43:53 - HikariPool-1 - Start completed.
+========================================
+Chunkモデル設定
+チャンクサイズ: 100000件
+処理方式: バルクInsert（高速パターン）
+========================================
+
+2026-04-04 12:43:54 - Started DemoApplicationTests in 0.807 seconds (process running for 6.591)
+
+╔════════════════════════════════════════════════════════╗
+║   Spring Batch パフォーマンス比較バッチ起動           ║
+║   Tasklet vs Chunk モデル                             ║
+╚════════════════════════════════════════════════════════╝
+
+実行モード: 両方実行（比較モード）
+
+
+【1/2】Taskletモデル実行開始
+2026-04-04 12:43:54 - Job: [SimpleJob: [name=TaskletPerformanceJob]] launched with the following parameters: [{'time':'{value=1775274234040, type=class java.lang.Long, identifying=true}'}]
+
+========================================
+Job開始: TaskletPerformanceJob
+開始時刻: Sat Apr 04 12:43:54 JST 2026
+========================================
+
+2026-04-04 12:43:54 - Executing step: [TaskletPerformanceStep]
+========================================
+Taskletモデル処理開始
+処理件数: 10000000件
+処理方式: 1件ずつInsert（低速パターン）
+========================================
+
+[Tasklet進捗] 10% 完了 (1,000,000 / 10,000,000 件)
+[Tasklet進捗] 20% 完了 (2,000,000 / 10,000,000 件)
+[Tasklet進捗] 30% 完了 (3,000,000 / 10,000,000 件)
+[Tasklet進捗] 40% 完了 (4,000,000 / 10,000,000 件)
+[Tasklet進捗] 50% 完了 (5,000,000 / 10,000,000 件)
+[Tasklet進捗] 60% 完了 (6,000,000 / 10,000,000 件)
+[Tasklet進捗] 70% 完了 (7,000,000 / 10,000,000 件)
+[Tasklet進捗] 80% 完了 (8,000,000 / 10,000,000 件)
+[Tasklet進捗] 90% 完了 (9,000,000 / 10,000,000 件)
+[Tasklet進捗] 100% 完了 (10,000,000 / 10,000,000 件)
+
+========================================
+Taskletモデル処理完了
+総処理件数: 10000000件
+========================================
+
+2026-04-04 12:44:28 - Step: [TaskletPerformanceStep] executed in 34s268ms
+
+========================================
+Job終了: TaskletPerformanceJob
+終了時刻: Sat Apr 04 12:44:28 JST 2026
+実行時間: 34284 ms (34.284 秒)
+ステータス: COMPLETED
+========================================
+
+2026-04-04 12:44:28 - Job: [SimpleJob: [name=TaskletPerformanceJob]] completed with the following parameters: [{'time':'{value=1775274234040, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 34s290ms
+
+【2/2】Chunkモデル実行開始
+2026-04-04 12:44:30 - Job: [SimpleJob: [name=ChunkPerformanceJob]] launched with the following parameters: [{'time':'{value=1775274270370, type=class java.lang.Long, identifying=true}'}]
+
+========================================
+Job開始: ChunkPerformanceJob
+開始時刻: Sat Apr 04 12:44:30 JST 2026
+========================================
+
+2026-04-04 12:44:30 - Executing step: [ChunkPerformanceStep]
+[Reader進捗] 100,000 件読み込み完了
+[Writer進捗] 100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 200,000 件読み込み完了
+[Writer進捗] 200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 300,000 件読み込み完了
+[Writer進捗] 300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 400,000 件読み込み完了
+[Writer進捗] 400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 500,000 件読み込み完了
+[Writer進捗] 500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 600,000 件読み込み完了
+[Writer進捗] 600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 700,000 件読み込み完了
+[Writer進捗] 700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 800,000 件読み込み完了
+[Writer進捗] 800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 900,000 件読み込み完了
+[Writer進捗] 900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,000,000 件読み込み完了
+[Writer進捗] 1,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,100,000 件読み込み完了
+[Writer進捗] 1,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,200,000 件読み込み完了
+[Writer進捗] 1,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,300,000 件読み込み完了
+[Writer進捗] 1,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,400,000 件読み込み完了
+[Writer進捗] 1,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,500,000 件読み込み完了
+[Writer進捗] 1,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,600,000 件読み込み完了
+[Writer進捗] 1,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,700,000 件読み込み完了
+[Writer進捗] 1,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,800,000 件読み込み完了
+[Writer進捗] 1,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 1,900,000 件読み込み完了
+[Writer進捗] 1,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,000,000 件読み込み完了
+[Writer進捗] 2,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,100,000 件読み込み完了
+[Writer進捗] 2,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,200,000 件読み込み完了
+[Writer進捗] 2,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,300,000 件読み込み完了
+[Writer進捗] 2,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,400,000 件読み込み完了
+[Writer進捗] 2,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,500,000 件読み込み完了
+[Writer進捗] 2,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,600,000 件読み込み完了
+[Writer進捗] 2,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,700,000 件読み込み完了
+[Writer進捗] 2,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,800,000 件読み込み完了
+[Writer進捗] 2,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 2,900,000 件読み込み完了
+[Writer進捗] 2,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,000,000 件読み込み完了
+[Writer進捗] 3,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,100,000 件読み込み完了
+[Writer進捗] 3,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,200,000 件読み込み完了
+[Writer進捗] 3,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,300,000 件読み込み完了
+[Writer進捗] 3,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,400,000 件読み込み完了
+[Writer進捗] 3,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,500,000 件読み込み完了
+[Writer進捗] 3,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,600,000 件読み込み完了
+[Writer進捗] 3,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,700,000 件読み込み完了
+[Writer進捗] 3,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,800,000 件読み込み完了
+[Writer進捗] 3,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 3,900,000 件読み込み完了
+[Writer進捗] 3,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,000,000 件読み込み完了
+[Writer進捗] 4,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,100,000 件読み込み完了
+[Writer進捗] 4,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,200,000 件読み込み完了
+[Writer進捗] 4,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,300,000 件読み込み完了
+[Writer進捗] 4,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,400,000 件読み込み完了
+[Writer進捗] 4,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,500,000 件読み込み完了
+[Writer進捗] 4,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,600,000 件読み込み完了
+[Writer進捗] 4,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,700,000 件読み込み完了
+[Writer進捗] 4,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,800,000 件読み込み完了
+[Writer進捗] 4,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 4,900,000 件読み込み完了
+[Writer進捗] 4,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,000,000 件読み込み完了
+[Writer進捗] 5,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,100,000 件読み込み完了
+[Writer進捗] 5,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,200,000 件読み込み完了
+[Writer進捗] 5,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,300,000 件読み込み完了
+[Writer進捗] 5,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,400,000 件読み込み完了
+[Writer進捗] 5,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,500,000 件読み込み完了
+[Writer進捗] 5,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,600,000 件読み込み完了
+[Writer進捗] 5,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,700,000 件読み込み完了
+[Writer進捗] 5,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,800,000 件読み込み完了
+[Writer進捗] 5,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 5,900,000 件読み込み完了
+[Writer進捗] 5,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,000,000 件読み込み完了
+[Writer進捗] 6,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,100,000 件読み込み完了
+[Writer進捗] 6,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,200,000 件読み込み完了
+[Writer進捗] 6,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,300,000 件読み込み完了
+[Writer進捗] 6,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,400,000 件読み込み完了
+[Writer進捗] 6,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,500,000 件読み込み完了
+[Writer進捗] 6,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,600,000 件読み込み完了
+[Writer進捗] 6,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,700,000 件読み込み完了
+[Writer進捗] 6,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,800,000 件読み込み完了
+[Writer進捗] 6,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 6,900,000 件読み込み完了
+[Writer進捗] 6,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,000,000 件読み込み完了
+[Writer進捗] 7,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,100,000 件読み込み完了
+[Writer進捗] 7,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,200,000 件読み込み完了
+[Writer進捗] 7,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,300,000 件読み込み完了
+[Writer進捗] 7,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,400,000 件読み込み完了
+[Writer進捗] 7,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,500,000 件読み込み完了
+[Writer進捗] 7,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,600,000 件読み込み完了
+[Writer進捗] 7,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,700,000 件読み込み完了
+[Writer進捗] 7,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,800,000 件読み込み完了
+[Writer進捗] 7,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 7,900,000 件読み込み完了
+[Writer進捗] 7,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,000,000 件読み込み完了
+[Writer進捗] 8,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,100,000 件読み込み完了
+[Writer進捗] 8,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,200,000 件読み込み完了
+[Writer進捗] 8,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,300,000 件読み込み完了
+[Writer進捗] 8,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,400,000 件読み込み完了
+[Writer進捗] 8,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,500,000 件読み込み完了
+[Writer進捗] 8,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,600,000 件読み込み完了
+[Writer進捗] 8,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,700,000 件読み込み完了
+[Writer進捗] 8,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,800,000 件読み込み完了
+[Writer進捗] 8,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 8,900,000 件読み込み完了
+[Writer進捗] 8,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,000,000 件読み込み完了
+[Writer進捗] 9,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,100,000 件読み込み完了
+[Writer進捗] 9,100,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,200,000 件読み込み完了
+[Writer進捗] 9,200,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,300,000 件読み込み完了
+[Writer進捗] 9,300,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,400,000 件読み込み完了
+[Writer進捗] 9,400,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,500,000 件読み込み完了
+[Writer進捗] 9,500,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,600,000 件読み込み完了
+[Writer進捗] 9,600,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,700,000 件読み込み完了
+[Writer進捗] 9,700,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,800,000 件読み込み完了
+[Writer進捗] 9,800,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 9,900,000 件読み込み完了
+[Writer進捗] 9,900,000 件書き込み完了（チャンクサイズ: 100,000 件）
+[Reader進捗] 10,000,000 件読み込み完了
+[Writer進捗] 10,000,000 件書き込み完了（チャンクサイズ: 100,000 件）
+2026-04-04 12:45:18 - Step: [ChunkPerformanceStep] executed in 48s515ms
+
+========================================
+Job終了: ChunkPerformanceJob
+終了時刻: Sat Apr 04 12:45:18 JST 2026
+実行時間: 48518 ms (48.518 秒)
+ステータス: COMPLETED
+========================================
+
+2026-04-04 12:45:18 - Job: [SimpleJob: [name=ChunkPerformanceJob]] completed with the following parameters: [{'time':'{value=1775274270370, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 48s519ms
+
+╔════════════════════════════════════════════════════════╗
+║   パフォーマンス比較完了                               ║
+║   上記のログから実行時間を比較してください             ║
+╚════════════════════════════════════════════════════════╝
+
+]]></system-out>
+  </testcase>
+</testsuite>
